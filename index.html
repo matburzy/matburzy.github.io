@@ -170,10 +170,39 @@ iziToast.show({
     theme: 'dark',
     icon: 'icon-person',
     title: 'Informacje',
-    message: 'Wyszukiwarka KRS jest aplikacją na system Android umożliwiającą błyskawiczne wyszukanie informacji o firmie.<br> Korzysta z API Rejestr.io. Napisana w technologii Cordova.',
+    message: 'Wyszukiwarka KRS jest aplikacją na system Android umożliwiającą błyskawiczne wyszukanie informacji o dowolnej firmie wpisanej do Krajowego Rejestru Sądowego.<br> Korzysta z API Rejestr.io i napisana została w technologii Cordova.<br>Dostępna całkowicie za darmo w Sklepie Google.',
     position: 'center', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
 	maxWidth: '100%',
 	overlay: 'true',
+    progressBarColor: 'rgb(0, 255, 184)',
+    buttons: [
+        
+        ['<button>Zamknij</button>', function (instance, toast) {
+            instance.hide({
+                transitionOut: 'fadeOutUp',
+                
+            }, toast, 'buttonName');
+        }]
+    ],
+    onOpening: function(instance, toast){
+        console.info('callback abriu!');
+    },
+    onClosing: function(instance, toast, closedBy){
+        console.info('closedBy: ' + closedBy); // tells if it was closed by 'drag' or 'button'
+    }
+});
+};
+
+function infoEtyka() {
+iziToast.show({
+    theme: 'dark',
+    icon: 'icon-person',
+    title: 'Informacje',
+    message: 'Etyka Radcy Prawnego - Pytania to aplikacja umożliwiająca wylosowanie zestawu trzech pytań na kolokwium z Etyki Radcy Prawnego. Pytania aktualizowane co roku. Dostępna w Sklepie Google Play i napisana w technologii Cordova.',
+    position: 'center', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
+	maxWidth: '100%',
+	overlay: 'true',
+	image: 'img/etyka.jpg',
     progressBarColor: 'rgb(0, 255, 184)',
     buttons: [
         
@@ -207,7 +236,11 @@ border: none;
   <div data-aos="flip-left" data-aos-duration="1000" class="grid-item"><a class="nazwaAplikacji" href="https://play.google.com/store/apps/details?id=com.matburzy.prawopracy">Prawo pracy<br>i ubezpieczeń społecznych<br>Pytania</a><br><br>   <i class="fa fa-android fa-2x"></i></div>
   
   
-  <div data-aos="flip-right" data-aos-duration="1000" class="grid-item etyka"><a class="nazwaAplikacji" href="https://play.google.com/store/apps/details?id=com.matburzy.etykaradcy">Etyka Radcy Prawnego<br>Pytania</a><br><br>   <i class="fa fa-android fa-2x"></i></div>  
+  <div data-aos="flip-right" data-aos-duration="1000" class="grid-item etyka"><a class="nazwaAplikacji" href="https://play.google.com/store/apps/details?id=com.matburzy.etykaradcy">Etyka Radcy Prawnego<br>Pytania</a><br><br>   <i class="fa fa-android fa-2x"></i>
+  
+  <button onclick="infoEtyka()">Pokaż informacje</button>
+  
+  </div>  
   <div data-aos="flip-up" data-aos-duration="1000" class="grid-item myt"><a class="nazwaAplikacji" href="https://votdtech.blogspot.com/">MeetYourTech</a> <br><br>  <i class="fa fa-html5 fa-2x"></i></div>
   <div data-aos="flip-left" data-aos-duration="1000" class="grid-item radca"><a class="nazwaAplikacji" href="http://kancelariaprawna.suwalki.pl/">Kancelaria Prawna<br> radca prawny Marek Burzyński</a><br><br><i class="fa fa-html5 fa-2x"></i></div>
    <div data-aos="flip-down" data-aos-duration="1000" class="grid-item"><a class="nazwaAplikacji" href="http://prawnikometr.co.nf/">Prawnikometr</a><br><br><i class="fa fa-html5 fa-2x"></i><i class="icon-php-alt"></i><i class="icon-mysql-alt"></i></div>
@@ -463,7 +496,7 @@ iziToast.show({
     title: 'Witaj przybyszu!',
 	theme: 'dark',
     message: 'Witaj na mojej stronie! Zapraszam do przejrzenia moich projektów.',
-	position: 'topRight',
+	position: 'bottomCenter',
 	balloon: 'true',
 	image: 'img/profile.jpg',
 	progressBarColor: 'white',
