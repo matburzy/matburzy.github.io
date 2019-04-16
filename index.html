@@ -569,6 +569,12 @@ iziToast.show({
 	progressBarColor: 'white',
 });
 </script>
+
+<script>
+var host = "prawo.dev";
+if ((host == window.location.host) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
+</script>
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
