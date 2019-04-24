@@ -8,8 +8,8 @@ var dict = {
   "Kreatywność": {
     en: "Creativity"
   },
-  "programista, a z wykształcenia": {
-    en: "programmer and trained as a"
+  "programista samouk, a z wykształcenia": {
+    en: "self-taught programmer and trained as a"
   },
   "Pasjonuję się nowymi technologiami.": {
     en: "I'm crazy about new technologies."
