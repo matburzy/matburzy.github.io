@@ -1,6 +1,30 @@
 var dict = {
-  "Aspirujący programista i prawnik w jednym. W wolnym czasie realizuję projekty związane zarówno z prawem, jak i IT. Moim celem jest reprezentowanie zawodu przyszłości - prawnika-programisty. Realizuję ciekawe projekty IT pomagające w automatyzacji pracy prawnika. ": {
-    en: "Aspiring programmer and (in the future) attorney-at-law. In my free time, I work on various projects that are law and IT-themed. I would like to lead a lawyer/programmer career. I'm currently working on various projects to automate lawyer work."
+  "Z zamiłowania": {
+    en: "Passion-wise"
+  },
+  "Podzielność uwagi": {
+    en: "Multitasking"
+  },
+  "Kreatywność": {
+    en: "Creativity"
+  },
+  "programista, a z wykształcenia": {
+    en: "programmer and trained as a"
+  },
+  "Pasjonuję się nowymi technologiami.": {
+    en: "I'm crazy about new technologies."
+  },
+"Obecnie poszukuję pracy na stanowisku front-end": {
+  en: "I'm currently available to hire as a front-end developer"
+},
+"bądź back-end": {
+  en: "or back-end"
+},
+"W wolnym czasie realizuję projekty związane zarówno z prawem, jak i IT. Technologie i języki programowania traktują jako narzędzia do określonych celów, a nie cele same w sobie. Realizuję ciekawe projekty IT pomagające w automatyzacji pracy prawnika. Moim celem jest praca jako programista. ": {
+  en: "In my free time I create projects that are law and IT-themed. I treat technologies and programming languages as tools to reach certain goal, not the goal itself. I'm rendering interesting IT projects that automate lawyer's work. My goal is to work as a programmer."
+},
+  "prawnik.": {
+    en: "lawyer"
   },
   "O mnie": {
     en: "About Me"
@@ -40,7 +64,7 @@ var dict = {
   },
   "Kancelaria Prawna<br> radca prawny Marek Burzyński": {
   en: "Marek Burzynski Attorney-at-law Website"
-  }, 
+  },
   "Prawnikometr": {
   en: "Lawyer-o-meter in Poland"
   },
@@ -54,7 +78,7 @@ var dict = {
 	  en: "Attorney-at-law Office"
   },
   "Aktualnie pracuję w Kancelarii Radcy Prawnego, gdzie zajmuję się m.in. obsługą przedsiębiorców, e-Sąd, KRS, przekład umów z angielskiego prawniczego na polski język prawniczy i w drugą stronę, zastępstwo procesowe.": {
-	  en: "I'm currently working at Attorney-at-law Office where my duties are rendering legal services to companies, e-Court proceedings, Polish National Court Registry proceedings, translating legal contracts from English to Polish and representing invidual clients." 
+	  en: "I'm currently working at Attorney-at-law Office where my duties are rendering legal services to companies, e-Court proceedings, Polish National Court Registry proceedings, translating legal contracts from English to Polish and representing invidual clients."
   },
 	"październik 2015 - aktualnie": {
 		en: "October 2015 - ongoing"
@@ -175,5 +199,8 @@ var dict = {
 },
 "Stypendium dla najlepszych studentów w roku 2014-2015 Uniwersytetu Gdańskiego": {
 	en: "Scolarship for the best students of year 2014-2015 University of Gdansk"
+},
+"Realizowałem swoje projekty w następujących technologiach:": {
+  en: "I made my projects using following technologies:"
 },
 }
