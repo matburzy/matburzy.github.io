@@ -45,25 +45,25 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about"><i class="fa fa-user"></i> O mnie</a>
+            <a class=" nav-link js-scroll-trigger" href="#about"><i class="fa fa-user"></i> <span class="trn">O mnie</span></a>
           </li>
 		   <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects"><i class="fa fa-cogs"></i> Portfolio</a>
+            <a class="nav-link js-scroll-trigger" href="#projects"><i class="fa fa-cogs"></i> <span class="trn">Portfolio</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience"><i class="fa fa-briefcase"></i> Kariera</a>
+            <a class="nav-link js-scroll-trigger" href="#experience"><i class="fa fa-briefcase"></i> <span class="trn">Kariera</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education"><i class="fa fa-university"></i> Wykształcenie</a>
+            <a class="nav-link js-scroll-trigger" href="#education"><i class="fa fa-university"></i> <span class="trn">Wykształcenie</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills"><i class="fa fa-cogs"></i> Umiejętności</a>
+            <a class="nav-link js-scroll-trigger" href="#skills"><i class="fa fa-cogs"></i> <span class="trn">Umiejętności</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests"><i class="fa fa-headphones"></i> Zainteresowania</a>
+            <a class="nav-link js-scroll-trigger" href="#interests"><i class="fa fa-headphones"></i> <span class="trn">Zainteresowania</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards"><i class="fa fa-star"></i>Wyróżnienia</a>
+            <a class="nav-link js-scroll-trigger" href="#awards"><i class="fa fa-star"></i><span class="trn">Wyróżnienia</span></a>
           </li>
         </ul>
       </div>
@@ -79,14 +79,29 @@
           <div data-aos="fade-up" data-aos-duration="1200"  class="subheading mb-5">
             <a  href="mailto:matburzy@gmail.com">matburzy@gmail.com</a>
           </div>
-          <p data-aos="fade-up" data-aos-duration="1500" class="mb-5">Aspirujący programista i prawnik w jednym. W wolnym czasie realizuję projekty związane zarówno z prawem, jak i IT. Moim celem jest reprezentowanie zawodu przyszłości - prawnika-programisty. Realizuję ciekawe projekty IT pomagające w automatyzacji pracy prawnika. </p>
+		   
+		      <script src="vendor/jquery/jquery.min.js"></script>
+			     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+		  	<script src="jquery.translate.js"></script>
+	<script src="dict.js"></script>
+		  	<script>
+	function translateMe() {
+	
+	var translator = $('body').translate({lang: "en", t: dict}); 
+	translator.lang("en");
+	};
+	</script>
+		  <div data-aos="fade-up" data-aos-duration="1200"  class="subheading mb-5">
+            <button type="button" class="btn btn-info" onclick="translateMe()"><i class="fas fa-language"></i> View in English</button>
+          </div>
+          <p data-aos="fade-up" data-aos-duration="1500" class="mb-5 trn">Aspirujący programista i prawnik w jednym. W wolnym czasie realizuję projekty związane zarówno z prawem, jak i IT. Moim celem jest reprezentowanie zawodu przyszłości - prawnika-programisty. Realizuję ciekawe projekty IT pomagające w automatyzacji pracy prawnika. </p>
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
 			<a data-aos="flip-left" data-aos-delay="200" data-aos-duration="750" class="fab fa-linkedin fa-3x" aria-hidden="true" class="LI-simple-link" href='https://pl.linkedin.com/in/matburzy?trk=profile-badge' style="text-decoration: none;"> </a>
 
 			<a data-aos="flip-left" data-aos-delay="250" data-aos-duration="750" href="https://github.com/matburzy" class="fab fa-github fa-3x" aria-hidden="true"></a>
 			<a data-aos="flip-left" data-aos-delay="300" data-aos-duration="750" href="https://codepen.io/matburzy/" class="fab fa-codepen fa-3x" aria-hidden="true"></a>
-<br><br><a class="nav-link js-scroll-trigger" href="#projects">Przejdź do Portfolio <i class="fa fa-arrow-down"></i></a>
+<br><br><a class="nav-link js-scroll-trigger" href="#projects"><span class="trn">Przejdź do Portfolio</span> <i class="fa fa-arrow-down"></i></a>
     	</div>
 
             </li>
@@ -230,30 +245,30 @@ border: none;
 }
 </style>
 <div class="grid-container">
-  <div  data-aos="flip-down" data-aos-duration="1000" class="grid-item krslite"><a class="nazwaAplikacji" href="https://play.google.com/store/apps/details?id=com.matburzy.krslite">Wyszukiwarka KRS <i class="fas fa-external-link-alt"></i><br>
+  <div  data-aos="flip-down" data-aos-duration="1000" class="grid-item krslite"><a  class="nazwaAplikacji" href="https://play.google.com/store/apps/details?id=com.matburzy.krslite"><span class="trn">Wyszukiwarka KRS</span> <i class="fas fa-external-link-alt"></i><br>
               <br><br><i class="fab fa-android fa-2x"></i>
-    </a><button onclick="infoWyszukiwarkaKRS()">Pokaż informacje</button></div>
-  <div data-aos="flip-left" data-aos-duration="1000" class="grid-item"><a class="nazwaAplikacji" href="https://play.google.com/store/apps/details?id=com.matburzy.prawopracy">Prawo pracy<br>i ubezpieczeń społecznych<br>Pytania <i class="fas fa-external-link-alt"></i></a><br><br>   <i class="fab fa-android fa-2x"></i>
-  <button onclick="infoPracy()">Pokaż informacje</button>
+    </a><button class="trn" onclick="infoWyszukiwarkaKRS()">Pokaż informacje</button></div>
+  <div data-aos="flip-left" data-aos-duration="1000" class="grid-item"><a class="nazwaAplikacji" href="https://play.google.com/store/apps/details?id=com.matburzy.prawopracy"><span class="trn">Prawo pracy<br>i ubezpieczeń społecznych<br>Pytania</span> <i class="fas fa-external-link-alt"></i></a><br><br>   <i class="fab fa-android fa-2x"></i>
+  <button class="trn" onclick="infoPracy()">Pokaż informacje</button>
 
   </div>
 
 
-  <div data-aos="flip-right" data-aos-duration="1000" class="grid-item etyka"><a class="nazwaAplikacji" href="https://play.google.com/store/apps/details?id=com.matburzy.etykaradcy">Etyka Radcy Prawnego<br>Pytania <i class="fas fa-external-link-alt"></i></a><br><br>   <i class="fab fa-android fa-2x"></i>
+  <div data-aos="flip-right" data-aos-duration="1000" class="grid-item etyka"><a class="nazwaAplikacji" href="https://play.google.com/store/apps/details?id=com.matburzy.etykaradcy"><span class="trn">Etyka Radcy Prawnego<br>Pytania</span> <i class="fas fa-external-link-alt"></i></a><br><br>   <i class="fab fa-android fa-2x"></i>
 
-  <button onclick="infoEtyka()">Pokaż informacje</button>
+  <button onclick="infoEtyka()"><span class="trn">Pokaż informacje</span></button>
 
   </div>
   <div data-aos="flip-up" data-aos-duration="1000" class="grid-item myt"><a class="nazwaAplikacji" href="https://votdtech.blogspot.com/">MeetYourTech <i class="fas fa-external-link-alt"></i></a> <br><br>  <i class="fab fa-html5 fa-2x"></i>
-  <button onclick="infoMYT()">Pokaż informacje</button>
+  <button onclick="infoMYT()"><span class="trn">Pokaż informacje</span></button>
 
   </div>
-  <div data-aos="flip-left" data-aos-duration="1000" class="grid-item radca"><a class="nazwaAplikacji" href="http://kancelariaprawna.suwalki.pl/">Kancelaria Prawna<br> radca prawny Marek Burzyński <i class="fas fa-external-link-alt"></i></a><br><br><i class="fab fa-html5 fa-2x"></i></div>
-   <div data-aos="flip-down" data-aos-duration="1000" class="grid-item"><a class="nazwaAplikacji" href="http://prawnikometr.co.nf/">Prawnikometr <i class="fas fa-external-link-alt"></i></a><br><br><i class="fab fa-html5 fa-2x"></i><i class="icon-php-alt"></i><i class="icon-mysql-alt"></i></div>
+  <div data-aos="flip-left" data-aos-duration="1000" class="grid-item radca"><a class="nazwaAplikacji" href="http://kancelariaprawna.suwalki.pl/"><span class="trn">Kancelaria Prawna<br> radca prawny Marek Burzyński</span> <i class="fas fa-external-link-alt"></i></a><br><br><i class="fab fa-html5 fa-2x"></i></div>
+   <div data-aos="flip-down" data-aos-duration="1000" class="grid-item"><a class="nazwaAplikacji" href="http://prawnikometr.co.nf/"><span class="trn">Prawnikometr</span> <i class="fas fa-external-link-alt"></i></a><br><br><i class="fab fa-html5 fa-2x"></i><i class="icon-php-alt"></i><i class="icon-mysql-alt"></i></div>
 
 </div>
 
-		  <h3 data-aos="fade-up" class="mb-0">Lab<span class="text-primary">oratorium</span>
+		  <h3 data-aos="fade-up" class="mb-0"><span class="trn">Lab<span class="text-primary"><span class="trn">oratorium</span></span></span>
           </h3><br>
 		  <p data-aos="fade-up" class="mb-0"><span style="color: black;"><strong>Projekty w fazie konceptu albo rozwoju, nad którymi pracuję w wolnym czasie.</strong></p><br>
 
@@ -270,49 +285,49 @@ border: none;
 
       <section  class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div class="my-auto">
-          <h2 data-aos="zoom-in" class="mb-5"><i class="fa fa-briefcase"></i> Kariera</h2>
+          <h2 data-aos="zoom-in" class="mb-5"><i class="fa fa-briefcase"></i> <span class="trn">Kariera</span></h2>
 
           <div data-aos="flip-down" data-aos-duration="750" class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0"><i style="color: yellow;" class="fa fa-star fa-spin"></i> Aplikant radcowski</h3>
-              <div class="subheading mb-3">Kancelaria Radcy Prawnego</div>
-              <p>Aktualnie pracuję w Kancelarii Radcy Prawnego, gdzie zajmuję się m.in. obsługą przedsiębiorców, e-Sąd, KRS, przekład umów z angielskiego prawniczego na polski język prawniczy i w drugą stronę, zastępstwo procesowe.</p>
+              <h3 class="mb-0"><i style="color: gold;" class="fa fa-star fa-spin"></i> <span class="trn">Aplikant radcowski</span></h3>
+              <div class="subheading mb-3"><span class="trn">Kancelaria Radcy Prawnego</span></div>
+              <p><span class="trn">Aktualnie pracuję w Kancelarii Radcy Prawnego, gdzie zajmuję się m.in. obsługą przedsiębiorców, e-Sąd, KRS, przekład umów z angielskiego prawniczego na polski język prawniczy i w drugą stronę, zastępstwo procesowe.</span></p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">październik 2015 - aktualnie</span>
+              <span class="text-primary"><span class="trn">październik 2015 - aktualnie</span></span>
             </div>
           </div>
 
           <div data-aos="flip-up" data-aos-duration="750" class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Student prawa</h3>
-              <div class="subheading mb-3">Kancelaria Radcy Prawnego / Syndyk upadłości</div>
-              <p>W poprzedniej pracy w Kancelarii Radcy Prawnego zajmowałem się obsługą postępowań upadłościowych oraz sporządzeniem uzasadnień Syndyka o przyznaniu kwot w postępowaniu upadłościowym podmiotu gospodarczego.</p>
+              <h3 class="mb-0"><span class="trn">Student prawa</span></h3>
+              <div class="subheading mb-3"><span class="trn">Kancelaria Radcy Prawnego</span> / <span class="trn">Syndyk upadłości</span></div>
+              <p><span class="trn">W poprzedniej pracy w Kancelarii Radcy Prawnego zajmowałem się obsługą postępowań upadłościowych oraz sporządzeniem uzasadnień Syndyka o przyznaniu kwot w postępowaniu upadłościowym podmiotu gospodarczego.</span></p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">październik 2014 - czerwiec 2015</span>
+              <span class="text-primary"><span class="trn">październik 2014 - czerwiec 2015</span></span>
             </div>
           </div>
 
           <div data-aos="flip-up" data-aos-duration="750" class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Praktykant</h3>
-              <div class="subheading mb-3">Sąd Rejonowy w Suwałkach</div>
-              <p>Uczestniczyłem w różnych czynnościach procesowych poza Sądem, jak i na sali sądowej.</p>
+              <h3 class="mb-0"><span class="trn">Praktykant</span></h3>
+              <div class="subheading mb-3"><span class="trn">Sąd Rejonowy w Suwałkach</span></div>
+              <p><span class="trn">Uczestniczyłem w różnych czynnościach procesowych poza Sądem, jak i na sali sądowej.</span></p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">lipiec 2014 - lipiec 2014</span>
+              <span class="text-primary"><span class="trn">lipiec 2014 - lipiec 2014</span></span>
             </div>
           </div>
 
           <div data-aos="flip-down" data-aos-duration="750" class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Praktykant</h3>
-              <div class="subheading mb-3">Prokuratura Rejonowa w Suwałkach</div>
-              <p>W ramach praktyk studenckich zdobywałem doświadczenie uczestnicząc w czynnościach procesowych prokuratora.</p>
+              <h3 class="mb-0"><span class="trn">Praktykant</span></h3>
+              <div class="subheading mb-3"><span class="trn">Prokuratura Rejonowa w Suwałkach</span></div>
+              <p><span class="trn">W ramach praktyk studenckich zdobywałem doświadczenie uczestnicząc w czynnościach procesowych prokuratora.</span></p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">lipiec 2013 - lipiec 2013</span>
+              <span class="text-primary"><span class="trn">lipiec 2013 - lipiec 2013</span></span>
             </div>
           </div>
 
@@ -322,40 +337,40 @@ border: none;
 
       <section id="education" data-aos="fade-up" class="resume-section p-3 p-lg-5 d-flex flex-column" >
         <div class="my-auto">
-          <h2 class="mb-5"><i class="fa fa-university"></i> Wykształcenie</h2>
+          <h2 class="mb-5"><i class="fa fa-university"></i> <span class="trn">Wykształcenie</span></h2>
           <div data-aos="fade-up" class="resume-item d-flex flex-column flex-md-row mb-5">
                <div class="resume-content mr-auto">
-                 <h3 data-aos="fade-up" class="mb-0"><i class="fa fa-spinner fa-spin"></i>  Radca Prawny (?)</h3>
+                 <h3 data-aos="fade-up" class="mb-0"><i class="fa fa-spinner fa-spin"></i>  <span class="trn">Radca Prawny</span> (?)</h3>
                  <div class="subheading mb-3"></div>
 
 
                </div>
                <div class="resume-date text-md-right">
-                 <span class="text-primary">w oczekiwaniu na rezultat egzaminu zawodowego</span>
+                 <span class="text-primary"><span class="trn">w oczekiwaniu na rezultat egzaminu zawodowego</span></span>
                </div>
              </div>
 		   <div data-aos="fade-up" class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 data-aos="fade-up" class="mb-0">Okręgowa Izba Radców Prawnych w Gdańsku</h3>
-              <div class="subheading mb-3">aplikant radcowski III-go roku</div>
+              <h3 data-aos="fade-up" class="mb-0"><span class="trn">Okręgowa Izba Radców Prawnych w Gdańsku</span></h3>
+              <div class="subheading mb-3"><span class="trn">aplikant radcowski III-go roku</span></div>
 
 
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">styczeń 2016 - grudzień 2018</span>
+              <span class="text-primary"><span class="trn">styczeń 2016 - grudzień 2018</span></span>
             </div>
           </div>
 
 
           <div data-aos="fade-up" class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3  class="mb-0">Uniwersytet Gdański</h3>
-              <div class="subheading mb-3">magister prawa</div>
-              <div>Praca magisterska: Instytucje zabezpieczania praw konsumenta</div>
+              <h3  class="mb-0"><span class="trn">Uniwersytet Gdański</span></h3>
+              <div class="subheading mb-3"><span class="trn">magister prawa</span></div>
+              <div><span class="trn">Praca magisterska: Instytucje zabezpieczania praw konsumenta</span></div>
 
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">październik 2010 - czerwiec 2015</span>
+              <span class="text-primary"><span class="trn">październik 2010 - czerwiec 2015</span></span>
             </div>
           </div>
 
@@ -365,7 +380,7 @@ border: none;
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
         <div class="my-auto">
-          <h2 data-aos="fade-in" class="mb-5">Umiejętności</h2>
+          <h2 data-aos="fade-in" class="mb-5"><span class="trn">Umiejętności</span></h2>
 
 		   <i data-aos="flip-right" data-aos-duration="750" data-aos-delay="100"  class="fa fa-microchip fa-5x" aria-hidden="true"></i><div data-aos="flip-right" data-aos-duration="750" data-aos-delay="100"  class="subheading mb-3">IT</div>
 
@@ -406,90 +421,90 @@ border: none;
           </ul>
 
           <i data-aos="flip-left" data-aos-duration="1500"  class="fa fa-institution fa-5x" aria-hidden="true"></i>
-          <div  data-aos="flip-right" data-aos-duration="1500"  class="subheading mb-3">Prawo</div>
+          <div  data-aos="flip-right" data-aos-duration="1500"  class="subheading mb-3"><span class="trn">Prawo</span></div>
 
                   <ul data-aos="fade-in" data-aos-duration="1500"  class="list-inline list-icons">
                     <li data-aos="flip-up" data-aos-duration="750" data-aos-delay="400" class="list-inline-item">
-                      <i class="fa fa-book"><h5 class="subheading mb-3">Prawo cywilne</h5></i>
+                      <i class="fa fa-book"><h5 class="subheading mb-3"><span class="trn">Prawo cywilne</span></h5></i>
                     </li>
 
                     <li data-aos="flip-up" data-aos-duration="750" data-aos-delay="400" class="list-inline-item">
-                      <i class="fa fa-book"><h5 class="subheading mb-3">Prawo gospodarcze</h5></i>
+                      <i class="fa fa-book"><h5 class="subheading mb-3"><span class="trn">Prawo gospodarcze</span></h5></i>
                     </li>
 
               <li data-aos="flip-up" data-aos-duration="750" data-aos-delay="400" class="list-inline-item">
-                      <i class="fa fa-book"><h5 class="subheading mb-3">Ochrona danych osobowych</h5></i>
+                      <i class="fa fa-book"><h5 class="subheading mb-3"><span class="trn">Ochrona danych osobowych</span></h5></i>
                     </li>
 
 
               <li data-aos="flip-up" data-aos-duration="750" data-aos-delay="400" class="list-inline-item">
-                      <i class="fa fa-book"><h5 class="subheading mb-3">Nowe technologie</h5></i>
+                      <i class="fa fa-book"><h5 class="subheading mb-3"><span class="trn">Nowe technologie</span></h5></i>
                     </li>
 
                   </ul><br>
 
                <ul   class="list-inline list-icons">
                       <li data-aos="fade-up" data-aos-duration="750" data-aos-delay="50" class="list-inline-item">
-                      <i class="fa fa-gavel"><h5 class="subheading mb-3">e-Sąd</h5></i>
+                      <i class="fa fa-gavel"><h5 class="subheading mb-3"><span class="trn">e-Sąd</span></h5></i>
                     </li>
 
               <li data-aos="fade-up" data-aos-duration="750" data-aos-delay="100" class="list-inline-item">
-                      <i class="fa fa-gavel"><h5 class="subheading mb-3">Postępowania KRS</h5></i>
+                      <i class="fa fa-gavel"><h5 class="subheading mb-3"><span class="trn">Postępowania KRS</span></h5></i>
                     </li>
 
               <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="150" class="list-inline-item">
-                      <i class="fas fa-hands-helping"><h5 class="subheading mb-3">Zastępstwo procesowe</h5></i>
+                      <i class="fas fa-hands-helping"><h5 class="subheading mb-3"><span class="trn">Zastępstwo procesowe</span></h5></i>
                     </li>
 
               <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="200" class="list-inline-item">
-                      <i class="fas fa-file-word"><h5 class="subheading mb-3">Umowy i regulaminy</h5></i>
+                      <i class="fas fa-file-word"><h5 class="subheading mb-3"><span class="trn">Umowy i regulaminy</span></h5></i>
                     </li>
 
                   </ul>
 
-          <div data-aos="flip-right" data-aos-duration="750" data-aos-delay="100" class="subheading mb-5"><i class="fa fa-user"></i>Najważniejsze cechy</div>
+          <div data-aos="flip-right" data-aos-duration="750" data-aos-delay="100" class="subheading mb-5"><i class="fa fa-user"></i><span class="trn">Najważniejsze cechy</span></div>
           <ul class="fa-ul mb-0">
             <li >
               <i data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" style="color:green;" class="fa-li fa fa-check fa-2x"></i>
-              <span data-aos="fade-down" data-aos-delay="200">Profesjonalizm, cierpliwość, skrupulatność i dążenie do celu</span><span>
+              <span data-aos="fade-down" data-aos-delay="200"><span class="trn">Profesjonalizm, cierpliwość, skrupulatność i dążenie do celu</span></span><span>
 
 			  </li>
 
 			<li >
               <i data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" style="color:green;" class="fa-li fa fa-check fa-2x"></i>
-             <span data-aos="fade-up" data-aos-delay="300"> Elastyczność i niekonwencjalny sposób myślenia</li>
+             <span data-aos="fade-up" data-aos-delay="300"> <span class="trn">Elastyczność i niekonwencjalny sposób myślenia</span></li>
             <li data-aos="flip-down" data-aos-delay="400">
               <i data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400" style="color:green;" class="fa-li fa fa-check fa-2x"></i>
-              Praca w zespole</li>
+              <span class="trn">Praca w zespole</span></li>
             <li >
               <i data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" style="color:green;" class="fa-li fa fa-check fa-2x"></i>
-             <span data-aos="fade-up" data-aos-delay="500"> Szybkie uczenie się i adaptacja do zmieniających się warunków pracy</span></li>
+             <span data-aos="fade-up" data-aos-delay="500"> <span class="trn">Szybkie uczenie się i adaptacja do zmieniających się warunków pracy</span></span></li>
           </ul>
         </div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
-          <h2 data-aos="fade-in" class="mb-5">Zainteresowania</h2>
+          <h2 data-aos="fade-in" class="trn mb-5">Zainteresowania</h2>
         <span class="subheading mb-5"><i class="fas fa-bicycle fa-2x"></i></span>
         <span class="subheading mb-5"><i class="fas fa-headphones fa-2x"></i></span>
         <span class="subheading mb-5"><i class="fas fa-guitar fa-2x"></i></span>
           <span class="subheading mb-5"><i class="fas fa-film fa-2x"></i></span>
             <span class="subheading mb-5"><i class="fas fa-video fa-2x"></i></span>
               <span class="subheading mb-5"><i class="fas fa-gamepad fa-2x"></i></span>
-          <p data-aos="fade-up" >Poza programowaniem oraz prawniczeniem zajmuję się również hobbistycznie muzyką, jestem pasjonatem filmów i gier video, a także lubię wybierać się na wycieczki piesze oraz rowerowe.</p>
-          <p data-aos="fade-up" class="mb-0">Wolne chwile spędzam na zgłębianiu wiedzy na temat nowych technologii i staram się oceniać ich przydatność i zastosowanie w codziennym życiu. Krytycznie oceniam wszelkie nowinki techniczne.</p><br>
-		  <p data-aos="fade-up" class="mb-0">Amatorsko zajmuję się również fotografią i wideofilmowaniem. Posiadam rozległą wiedzę na temat formatów kompresji cyfrowego obrazu i dźwięku oraz odrębności pomiędzy różnymi formatami. Znam różnicę pomiędzy formatem, a kontenerem ;-). Potrafię również dokonywać authoringu płyt DVD i masterowania płyt Audio CD, nie stanowi dla mnie również problemu tworzenie cyfrowej kopii analogowych formatów, takich jak kaseta magnetofonowa, czy kaseta VHS.</p>
+          <p data-aos="fade-up" ><span class="trn">Poza programowaniem oraz prawniczeniem zajmuję się również hobbistycznie muzyką, jestem pasjonatem filmów i gier video, a także lubię wybierać się na wycieczki piesze oraz rowerowe.</span></p>
+          <p data-aos="fade-up" class="mb-0"><span class="trn">Wolne chwile spędzam na zgłębianiu wiedzy na temat nowych technologii i staram się oceniać ich przydatność i zastosowanie w codziennym życiu. Krytycznie oceniam wszelkie nowinki techniczne.</span></p><br>
+		  <p data-aos="fade-up" class="mb-0"><span class="trn">Amatorsko zajmuję się również fotografią i wideofilmowaniem. Posiadam rozległą wiedzę na temat formatów kompresji cyfrowego obrazu i dźwięku oraz odrębności pomiędzy różnymi formatami. Znam różnicę pomiędzy formatem, a kontenerem ;-). Potrafię również dokonywać authoringu płyt DVD i masterowania płyt Audio CD, nie stanowi dla mnie również problemu tworzenie cyfrowej kopii analogowych formatów, takich jak kaseta magnetofonowa, czy kaseta VHS.</span></p>
         </div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
         <div class="my-auto">
-          <h2  data-aos="fade-in" class="mb-5">Wyróżnienia, Nagrody, Certyfikaty</h2>
+          <h2  data-aos="fade-in" class="mb-5"><span class="trn">Wyróżnienia, Nagrody, Certyfikaty</span></h2>
           <ul class="fa-ul mb-0">
             <li data-aos="fade-up">
               <i class="fa-li fa fa-trophy text-warning"></i>
-              Stypendium dla najlepszych studentów w roku 2014-2015 Uniwersytetu Gdańskiego</li>
+              <span class="trn">Stypendium dla najlepszych studentów w roku 2014-2015 Uniwersytetu Gdańskiego</span></li>
 
           </ul>
         </div>
@@ -501,7 +516,7 @@ border: none;
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="vendor/jquery/jquery.min.js"></script>
+
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script>
   AOS.init();
@@ -526,7 +541,9 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
     window.location.protocol = "https";
 </script>
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+
+	
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
