@@ -27,6 +27,15 @@
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
 
+    <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+
   </head>
 
   <body id="page-top">
@@ -79,29 +88,71 @@
           <div data-aos="fade-up" data-aos-duration="1200"  class="subheading mb-5">
             <a  href="mailto:matburzy@gmail.com">matburzy@gmail.com</a>
           </div>
-		   
+
 		      <script src="vendor/jquery/jquery.min.js"></script>
 			     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 		  	<script src="jquery.translate.js"></script>
 	<script src="dict.js"></script>
 		  	<script>
 	function translateMe() {
-	
-	var translator = $('body').translate({lang: "en", t: dict}); 
+
+	var translator = $('body').translate({lang: "en", t: dict});
 	translator.lang("en");
 	};
 	</script>
 		  <div data-aos="fade-up" data-aos-duration="1200"  class="subheading mb-5">
             <button type="button" class="btn btn-info" onclick="translateMe()"><i class="fas fa-language"></i> View in English</button>
           </div>
-          <p data-aos="fade-up" data-aos-duration="1500" class="mb-5 trn">Aspirujący programista i prawnik w jednym. W wolnym czasie realizuję projekty związane zarówno z prawem, jak i IT. Moim celem jest reprezentowanie zawodu przyszłości - prawnika-programisty. Realizuję ciekawe projekty IT pomagające w automatyzacji pracy prawnika. </p>
+          <p data-aos="fade-up" data-aos-duration="1500" class="mb-5 trn">Z zamiłowania <i style="color:red;" class="fas fa-heart"></i> programista, a z wykształcenia <i class="fas fa-graduation-cap"></i> prawnik.<br><br>
+            Pasjonuję się nowymi technologiami. <br><br>
+            Obecnie poszukuję pracy na stanowisku front-end (<i class="fab fa-html5 fa-2x"></i>HTML5 + <i class="fab fa-css3 fa-2x"></i> CSS + <i class="fab fa-js fa-2x"></i> JS)
+            bądź back-end (<i class="fab fa-php fa-2x"></i> PHP lub <i class="fas fa-database fa-2x"></i> MySQL lub <i class="fab fa-python fa-2x"></i> Python).
+             W wolnym czasie realizuję projekty związane zarówno z prawem, jak i IT. Technologie i języki programowania traktują jako narzędzia do określonych celów, a nie cele same w sobie. Realizuję ciekawe projekty IT pomagające w automatyzacji pracy prawnika. Moim celem jest praca jako programista. </p>
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
 			<a data-aos="flip-left" data-aos-delay="200" data-aos-duration="750" class="fab fa-linkedin fa-3x" aria-hidden="true" class="LI-simple-link" href='https://pl.linkedin.com/in/matburzy?trk=profile-badge' style="text-decoration: none;"> </a>
 
 			<a data-aos="flip-left" data-aos-delay="250" data-aos-duration="750" href="https://github.com/matburzy" class="fab fa-github fa-3x" aria-hidden="true"></a>
 			<a data-aos="flip-left" data-aos-delay="300" data-aos-duration="750" href="https://codepen.io/matburzy/" class="fab fa-codepen fa-3x" aria-hidden="true"></a>
-<br><br><a class="nav-link js-scroll-trigger" href="#projects"><span class="trn">Przejdź do Portfolio</span> <i class="fa fa-arrow-down"></i></a>
+<br><br>
+
+<div data-aos="flip-right" data-aos-duration="750" data-aos-delay="100" class="subheading mb-5"><i class="fa fa-user"></i><span class="trn">Najważniejsze cechy</span></div>
+<ul class="fa-ul mb-0">
+  <li >
+
+    <i data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" style="color:green;" class="fa-li fa fa-check fa-2x"></i>
+
+    <span data-aos="fade-down" data-aos-delay="200"><span class="trn">Podzielność uwagi</span> </span><span>
+
+</li>
+  <li >
+
+    <i data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" style="color:green;" class="fa-li fa fa-check fa-2x"></i>
+
+    <span data-aos="fade-down" data-aos-delay="200"><span class="trn">Kreatywność</span>   <span class="counter">100</span> %</span><span>
+
+</li>
+  <li >
+
+    <i data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" style="color:green;" class="fa-li fa fa-check fa-2x"></i>
+
+    <span data-aos="fade-down" data-aos-delay="200"><span class="trn">Profesjonalizm, cierpliwość, skrupulatność i dążenie do celu</span></span><span>
+
+</li>
+
+<li >
+    <i data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" style="color:green;" class="fa-li fa fa-check fa-2x"></i>
+   <span data-aos="fade-up" data-aos-delay="300"> <span class="trn">Elastyczność i niekonwencjalny sposób myślenia</span></li>
+  <li data-aos="flip-down" data-aos-delay="400">
+    <i data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400" style="color:green;" class="fa-li fa fa-check fa-2x"></i>
+    <span class="trn">Praca w zespole</span></li>
+  <li >
+    <i data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" style="color:green;" class="fa-li fa fa-check fa-2x"></i>
+   <span data-aos="fade-up" data-aos-delay="500"> <span class="trn">Szybkie uczenie się i adaptacja do zmieniających się warunków pracy</span></span></li>
+</ul>
+
+<br><br>
+<a class="nav-link js-scroll-trigger" href="#projects"><span class="trn">Przejdź do Portfolio</span> <i class="fa fa-arrow-down"></i></a>
     	</div>
 
             </li>
@@ -117,8 +168,6 @@
           <div class="subheading mb-5">
             <a href="mailto:matburzy@gmail.com">matburzy@gmail.com</a>
           </div>
-
-
 <script type="text/javascript">
 function infoWyszukiwarkaKRS() {
 iziToast.show({
@@ -131,7 +180,6 @@ iziToast.show({
 	overlay: 'true',
     progressBarColor: 'rgb(0, 255, 184)',
     buttons: [
-
         ['<button>Zamknij</button>', function (instance, toast) {
             instance.hide({
                 transitionOut: 'fadeOutUp',
@@ -264,19 +312,16 @@ border: none;
 
   </div>
   <div data-aos="flip-left" data-aos-duration="1000" class="grid-item radca"><a class="nazwaAplikacji" href="http://kancelariaprawna.suwalki.pl/"><span class="trn">Kancelaria Prawna<br> radca prawny Marek Burzyński</span> <i class="fas fa-external-link-alt"></i></a><br><br><i class="fab fa-html5 fa-2x"></i></div>
-   <div data-aos="flip-down" data-aos-duration="1000" class="grid-item"><a class="nazwaAplikacji" href="http://prawnikometr.co.nf/"><span class="trn">Prawnikometr</span> <i class="fas fa-external-link-alt"></i></a><br><br><i class="fab fa-html5 fa-2x"></i><i class="icon-php-alt"></i><i class="icon-mysql-alt"></i></div>
-
+   <div data-aos="flip-down" data-aos-duration="1000" class="grid-item prawnikometr"><a class="nazwaAplikacji" href="http://prawnikometr.co.nf/"><span class="trn">Prawnikometr</span> <i class="fas fa-external-link-alt"></i></a><br><br><i class="fab fa-html5 fa-2x"> +</i> <i class="fab fa-php fa-2x"> +</i>
+     <i class="fas fa-database fa-2x"></i></div>
+   <div data-aos="flip-down" data-aos-duration="1000" class="grid-item mecenasapp"><a class="nazwaAplikacji" href="http://aotesty.hmcloud.pl/prototyp"><span class="trn">Mecenas.app (Prototyp)</span> <i class="fas fa-external-link-alt"></i></a><br><br><i class="fab fa-html5 fa-2x"> + </i> <i class="fab fa-php fa-2x"> +
+    </i> <i class="fab fa-js fa-2x"> + </i> 
+     <i class="fas fa-database fa-2x"></i></div>
+     <div data-aos="flip-down" data-aos-duration="1000" class="grid-item recourt"><a class="nazwaAplikacji" href="https://github.com/matburzy/recourt_converter"><span class="trn"><i class="fas fa-cogs"></i> ReCourt Converter (Prototyp)</span> <i class="fab fa-github"></i></a><br><br><i style="font-size: 200%;"class="devicons devicons-scriptcs"></i></div>
 </div>
 
-		  <h3 data-aos="fade-up" class="mb-0"><span class="trn">Lab<span class="text-primary"><span class="trn">oratorium</span></span></span>
-          </h3><br>
-		  <p data-aos="fade-up" class="mb-0"><span style="color: black;"><strong>Projekty w fazie konceptu albo rozwoju, nad którymi pracuję w wolnym czasie.</strong></p><br>
 
-
-
-		    <p data-aos="fade-up" class="mb-0"><span style="color: black;"><strong>Generator dokumentów</strong> - <span style="color: grey;">aplikacja ułatwiająca generowanie dokumentów na podstawie podanego wzorca, tzw. "zaczynu" - po podaniu danych dłużnika aplikacja generuje gotowy plik Worda, gotowy do dalszej edycji.</span></p><br>
-			 <p data-aos="fade-up" class="mb-0"><span style="color: black;"><strong>Generator formularzy (KRS, Pozew "P")</strong> - <span style="color: grey;">aplikacja ułatwiająca generowanie trudnych w obsłudze formularzy udostępnianych za pomocą ciężkiego w edycji i przestarzałego formatu .RTF.</span></p><br>
-			  <p data-aos="fade-up" class="mb-0"><span style="color: black;"><strong>Zarządzanie Kancelarią (KancelariaOS)</strong> - <span style="color: grey;">aplikacja umożliwiająca obsługę Kancelarii, w tym posiadająca kalendarz z wbudowanym terminowaniem (automatyczne obliczanie terminu na złożenie pisma) zintegrowane z ww. aplikacjami. Projekt w planach.</span></p><br>
+		 	  <p data-aos="fade-up" class="mb-0"><span style="color: black;"> - <span style="color: grey;">aplikacja umożliwiająca obsługę Kancelarii, w tym posiadająca kalendarz z wbudowanym terminowaniem (automatyczne obliczanie terminu na złożenie pisma) zintegrowane z ww. aplikacjami. Projekt w planach.</span></p><br>
           <ul class="list-inline list-social-icons mb-0">
 
           </ul>
@@ -298,38 +343,7 @@ border: none;
             </div>
           </div>
 
-          <div data-aos="flip-up" data-aos-duration="750" class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0"><span class="trn">Student prawa</span></h3>
-              <div class="subheading mb-3"><span class="trn">Kancelaria Radcy Prawnego</span> / <span class="trn">Syndyk upadłości</span></div>
-              <p><span class="trn">W poprzedniej pracy w Kancelarii Radcy Prawnego zajmowałem się obsługą postępowań upadłościowych oraz sporządzeniem uzasadnień Syndyka o przyznaniu kwot w postępowaniu upadłościowym podmiotu gospodarczego.</span></p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary"><span class="trn">październik 2014 - czerwiec 2015</span></span>
-            </div>
-          </div>
 
-          <div data-aos="flip-up" data-aos-duration="750" class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0"><span class="trn">Praktykant</span></h3>
-              <div class="subheading mb-3"><span class="trn">Sąd Rejonowy w Suwałkach</span></div>
-              <p><span class="trn">Uczestniczyłem w różnych czynnościach procesowych poza Sądem, jak i na sali sądowej.</span></p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary"><span class="trn">lipiec 2014 - lipiec 2014</span></span>
-            </div>
-          </div>
-
-          <div data-aos="flip-down" data-aos-duration="750" class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0"><span class="trn">Praktykant</span></h3>
-              <div class="subheading mb-3"><span class="trn">Prokuratura Rejonowa w Suwałkach</span></div>
-              <p><span class="trn">W ramach praktyk studenckich zdobywałem doświadczenie uczestnicząc w czynnościach procesowych prokuratora.</span></p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary"><span class="trn">lipiec 2013 - lipiec 2013</span></span>
-            </div>
-          </div>
 
         </div>
 
@@ -383,7 +397,7 @@ border: none;
           <h2 data-aos="fade-in" class="mb-5"><span class="trn">Umiejętności</span></h2>
 
 		   <i data-aos="flip-right" data-aos-duration="750" data-aos-delay="100"  class="fa fa-microchip fa-5x" aria-hidden="true"></i><div data-aos="flip-right" data-aos-duration="750" data-aos-delay="100"  class="subheading mb-3">IT</div>
-
+<p>Realizowałem swoje projekty w następujących technologach:</p>
           <ul class="list-inline list-icons">
             <li data-aos="flip-left" data-aos-duration="750" data-aos-delay="50" class="list-inline-item">
               <i class="devicons devicons-html5"></i>
@@ -462,24 +476,7 @@ border: none;
 
                   </ul>
 
-          <div data-aos="flip-right" data-aos-duration="750" data-aos-delay="100" class="subheading mb-5"><i class="fa fa-user"></i><span class="trn">Najważniejsze cechy</span></div>
-          <ul class="fa-ul mb-0">
-            <li >
-              <i data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" style="color:green;" class="fa-li fa fa-check fa-2x"></i>
-              <span data-aos="fade-down" data-aos-delay="200"><span class="trn">Profesjonalizm, cierpliwość, skrupulatność i dążenie do celu</span></span><span>
 
-			  </li>
-
-			<li >
-              <i data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" style="color:green;" class="fa-li fa fa-check fa-2x"></i>
-             <span data-aos="fade-up" data-aos-delay="300"> <span class="trn">Elastyczność i niekonwencjalny sposób myślenia</span></li>
-            <li data-aos="flip-down" data-aos-delay="400">
-              <i data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400" style="color:green;" class="fa-li fa fa-check fa-2x"></i>
-              <span class="trn">Praca w zespole</span></li>
-            <li >
-              <i data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" style="color:green;" class="fa-li fa fa-check fa-2x"></i>
-             <span data-aos="fade-up" data-aos-delay="500"> <span class="trn">Szybkie uczenie się i adaptacja do zmieniających się warunków pracy</span></span></li>
-          </ul>
         </div>
       </section>
 
@@ -533,6 +530,15 @@ iziToast.show({
 	image: 'img/profile.jpg',
 	progressBarColor: 'white',
 });
+iziToast.show({
+    title: 'Szukasz pracownika ;-)?',
+	theme: 'light',
+    message: 'Chętnie wspomogę zespół na stanowisku junior front-end, bądź junior back-end.',
+	position: 'topRight',
+	balloon: 'true',
+	image: 'img/profile.jpg',
+	progressBarColor: 'white',
+});
 </script>
 
 <script>
@@ -543,11 +549,13 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
     <!-- Plugin JavaScript -->
 
 
-	
+
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
   </body>
 
 </html>

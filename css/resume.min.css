@@ -208,6 +208,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', end
 background: darkgreen;
 }
 
+.mecenasapp {
+  background: #3E1E68;
+}
+
+.recourt {
+  background: #ce9025;
+}
+
+.prawnikometr {
+  background: #24b2cc;
+}
+
 .myt {
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+36,28343b+100;Grey+Black+3D */
 background: #b5bdc8; /* Old browsers */
