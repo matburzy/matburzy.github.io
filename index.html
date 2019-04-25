@@ -21,20 +21,12 @@
 
     <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-	  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.svg" rel="stylesheet">
+
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
 
-    <script>
-        jQuery(document).ready(function($) {
-            $('.counter').counterUp({
-                delay: 10,
-                time: 1000
-            });
-        });
-    </script>
+
 
   </head>
 
@@ -74,6 +66,12 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#awards"><i class="fa fa-star"></i><span class="trn">Wyróżnienia</span></a>
           </li>
+		  <li class="nav-item">
+		  <button type="button" class="btn btn-info" id="translation" onclick="translateMe()"><i class="fas fa-language"></i> English</button>
+			</li>
+			<li class="nav-item">
+			 <button type="button" class="btn btn-info" id="translation" onclick="Polish()"><i class="fas fa-language"></i> Polski</button>
+			 </li>
         </ul>
       </div>
     </nav>
@@ -100,8 +98,14 @@
 	translator.lang("en");
 	};
 	</script>
+	<script type="text/javascript">
+	function Polish() {
+	location.reload();
+	};
+	</script type="text/javascript">
 		  <div data-aos="fade-up" data-aos-duration="1200"  class="subheading mb-5">
-            <button type="button" class="btn btn-info" onclick="translateMe()"><i class="fas fa-language"></i> View in English</button>
+            <button type="button" class="btn btn-info" id="translation" onclick="translateMe()"><i class="fas fa-language"></i> English</button>
+			 <button type="button" class="btn btn-info" id="translation" onclick="Polish()"><i class="fas fa-language"></i> Polski</button>
           </div>
           <p data-aos="fade-up" data-aos-duration="1500" class="mb-5"><span class="trn">Z zamiłowania</span> <i style="color:red;" class="fas fa-heart"></i> <span class="trn">programista samouk, a z wykształcenia</span> <i class="fas fa-graduation-cap"></i> <span class="trn">prawnik.</span><br><br>
             <span class="trn">Pasjonuję się nowymi technologiami.</span> <br><br>
@@ -171,123 +175,7 @@
           <div class="subheading mb-5">
             <a href="mailto:matburzy@gmail.com">matburzy@gmail.com</a>
           </div>
-<script type="text/javascript">
-function infoWyszukiwarkaKRS() {
-iziToast.show({
-    theme: 'dark',
-    icon: 'icon-person',
-    title: 'Informacje',
-    message: 'Wyszukiwarka KRS jest aplikacją na system Android umożliwiającą błyskawiczne wyszukanie informacji o dowolnej firmie wpisanej do Krajowego Rejestru Sądowego.<br> Korzysta z API Rejestr.io i napisana została w technologii Cordova.<br>Dostępna całkowicie za darmo w Sklepie Google.',
-    position: 'topCenter', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
-	maxWidth: '100%',
-	overlay: 'true',
-    progressBarColor: 'rgb(0, 255, 184)',
-    buttons: [
-        ['<button>Zamknij</button>', function (instance, toast) {
-            instance.hide({
-                transitionOut: 'fadeOutUp',
 
-            }, toast, 'buttonName');
-        }]
-    ],
-    onOpening: function(instance, toast){
-        console.info('callback abriu!');
-    },
-    onClosing: function(instance, toast, closedBy){
-        console.info('closedBy: ' + closedBy); // tells if it was closed by 'drag' or 'button'
-    }
-});
-};
-
-function infoEtyka() {
-iziToast.show({
-    theme: 'dark',
-    icon: 'icon-person',
-    title: 'Informacje',
-    message: 'Etyka Radcy Prawnego - Pytania to aplikacja umożliwiająca wylosowanie zestawu trzech pytań na kolokwium z Etyki Radcy Prawnego. <br>Pytania aktualizowane co roku. <br>Dostępna w Sklepie Google Play i napisana w technologii Cordova.',
-    position: 'topCenter', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
-	maxWidth: '100%',
-	overlay: 'true',
-	image: 'img/etyka.jpg',
-    progressBarColor: 'rgb(0, 255, 184)',
-    buttons: [
-
-        ['<button>Zamknij</button>', function (instance, toast) {
-            instance.hide({
-                transitionOut: 'fadeOutUp',
-
-            }, toast, 'buttonName');
-        }]
-    ],
-    onOpening: function(instance, toast){
-        console.info('callback abriu!');
-    },
-    onClosing: function(instance, toast, closedBy){
-        console.info('closedBy: ' + closedBy); // tells if it was closed by 'drag' or 'button'
-    }
-});
-};
-
-function infoPracy() {
-iziToast.show({
-    theme: 'dark',
-    icon: 'icon-person',
-    title: 'Informacje',
-    message: 'Prawo pracy i ubezpieczeń społecznych - Pytania to aplikacja umożliwiająca wylosowanie zestawu pytań na kolokwium w I roku aplikacji radcowskiej.<br> Napisana w technologii Cordova i dostępna w Sklepie Google Play.',
-    position: 'topCenter', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
-
-	overlay: 'true',
-	image: 'img/etyka.jpg',
-    progressBarColor: 'rgb(0, 255, 184)',
-    buttons: [
-
-        ['<button>Zamknij</button>', function (instance, toast) {
-            instance.hide({
-                transitionOut: 'fadeOutUp',
-
-            }, toast, 'buttonName');
-        }]
-    ],
-    onOpening: function(instance, toast){
-
-    },
-    onClosing: function(instance, toast, closedBy){
-
-
-    }
-});
-};
-
-function infoMYT() {
-iziToast.show({
-    theme: 'dark',
-    icon: 'icon-person',
-    title: 'Informacje',
-    message: 'MeetYourTech - blog traktujący o IT i technologii, a także Prawie w połączeniu z IT.',
-    position: 'topCenter', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
-
-	overlay: 'true',
-	image: 'https://2.bp.blogspot.com/-LWTTmP_3v-o/XGLnEu_XWCI/AAAAAAAAS68/oQUu27eXCbEGxwTA5_2eZtKXlwfgJIuvwCK4BGAYYCw/s1600/Bez%2Btytu%25C5%2582u.png',
-    progressBarColor: 'rgb(0, 255, 184)',
-    buttons: [
-
-        ['<button>Zamknij</button>', function (instance, toast) {
-            instance.hide({
-                transitionOut: 'fadeOutUp',
-
-            }, toast, 'buttonName');
-        }]
-    ],
-    onOpening: function(instance, toast){
-
-    },
-    onClosing: function(instance, toast, closedBy){
-
-
-    }
-});
-};
-</script>
 <style>
 button {
 background: none;
@@ -296,6 +184,9 @@ border: none;
 }
 </style>
 <div class="grid-container">
+   <div data-aos="flip-down" data-aos-duration="1000" class="grid-item mecenasapp"><a class="nazwaAplikacji" href="http://aotesty.hmcloud.pl/prototyp"><span class="trn">Mecenas.app (Prototyp) (Login: demo, Hasło: demo123A)</span> <i class="fas fa-external-link-alt"></i></a><br><br><i class="fab fa-html5 fa-2x"> + </i> <i class="fab fa-php fa-2x"> +
+    </i> <i class="fab fa-js fa-2x"> + </i>
+     <i class="fas fa-database fa-2x"></i></div>
   <div  data-aos="flip-down" data-aos-duration="1000" class="grid-item krslite"><a  class="nazwaAplikacji" href="https://play.google.com/store/apps/details?id=com.matburzy.krslite"><span class="trn">Wyszukiwarka KRS</span> <i class="fas fa-external-link-alt"></i><br>
               <br><br><i class="fab fa-android fa-2x"></i>
     </a><button class="trn" onclick="infoWyszukiwarkaKRS()">Pokaż informacje</button></div>
@@ -317,14 +208,12 @@ border: none;
   <div data-aos="flip-left" data-aos-duration="1000" class="grid-item radca"><a class="nazwaAplikacji" href="http://kancelariaprawna.suwalki.pl/"><span class="trn">Kancelaria Prawna<br> radca prawny Marek Burzyński</span> <i class="fas fa-external-link-alt"></i></a><br><br><i class="fab fa-html5 fa-2x"></i></div>
    <div data-aos="flip-down" data-aos-duration="1000" class="grid-item prawnikometr"><a class="nazwaAplikacji" href="http://prawnikometr.co.nf/"><span class="trn">Prawnikometr</span> <i class="fas fa-external-link-alt"></i></a><br><br><i class="fab fa-html5 fa-2x"> +</i> <i class="fab fa-php fa-2x"> +</i>
      <i class="fas fa-database fa-2x"></i></div>
-   <div data-aos="flip-down" data-aos-duration="1000" class="grid-item mecenasapp"><a class="nazwaAplikacji" href="http://aotesty.hmcloud.pl/prototyp"><span class="trn">Mecenas.app (Prototyp)</span> <i class="fas fa-external-link-alt"></i></a><br><br><i class="fab fa-html5 fa-2x"> + </i> <i class="fab fa-php fa-2x"> +
-    </i> <i class="fab fa-js fa-2x"> + </i>
-     <i class="fas fa-database fa-2x"></i></div>
+
      <div data-aos="flip-down" data-aos-duration="1000" class="grid-item recourt"><a class="nazwaAplikacji" href="https://github.com/matburzy/recourt_converter"><span class="trn"><i class="fas fa-cogs"></i> ReCourt Converter (Prototyp)</span> <i class="fab fa-github"></i></a><br><br><i style="font-size: 200%;"class="devicons devicons-scriptcs"></i></div>
 </div>
 
 
-		 	  <p data-aos="fade-up" class="mb-0"><span style="color: black;"> - <span style="color: grey;">aplikacja umożliwiająca obsługę Kancelarii, w tym posiadająca kalendarz z wbudowanym terminowaniem (automatyczne obliczanie terminu na złożenie pisma) zintegrowane z ww. aplikacjami. Projekt w planach.</span></p><br>
+		 	  <p data-aos="fade-up" class="mb-0"><span style="color: black;"> - <span style="color: grey;"><span class="trn">Lista aplikacji przedstawionych w portfolio ma charakter przykładowy. W codziennej pracy korzystam również z</span> <i class="fab fa-python fa-2x"></i> Python<span class="trn">a, który pomaga mi w manipulacji plikami PDF, pisaniem uzasadnień do pozwów, a także innych czynności.</span></span></p><br>
           <ul class="list-inline list-social-icons mb-0">
 
           </ul>
@@ -547,9 +436,9 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-    <script src="jquery.counterup.min.js"></script>
+
+	<script src="js/showinfo.js"></script>
+	  
   </body>
 
 </html>

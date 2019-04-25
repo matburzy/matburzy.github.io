@@ -203,4 +203,10 @@ var dict = {
 "Realizowałem swoje projekty w następujących technologiach:": {
   en: "I made my projects using following technologies:"
 },
+"Lista aplikacji przedstawionych w portfolio ma charakter przykładowy. W codziennej pracy korzystam również z": {
+	en: "The projects listed above in portofolio are exemplary. In today's work I also use short"
+},
+"a, który pomaga mi w manipulacji plikami PDF, pisaniem uzasadnień do pozwów, a także innych czynności.": {
+	en: " scripts, which help me with PDF editing, writing generate legal documents and other stuff."
+},
 }
