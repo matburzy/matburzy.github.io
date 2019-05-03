@@ -17,10 +17,10 @@ iziToast.show({
         }]
     ],
     onOpening: function(instance, toast){
-        console.info('callback abriu!');
+
     },
     onClosing: function(instance, toast, closedBy){
-        console.info('closedBy: ' + closedBy); // tells if it was closed by 'drag' or 'button'
+
     }
 });
 };
@@ -46,10 +46,10 @@ iziToast.show({
         }]
     ],
     onOpening: function(instance, toast){
-        console.info('callback abriu!');
+
     },
     onClosing: function(instance, toast, closedBy){
-        console.info('closedBy: ' + closedBy); // tells if it was closed by 'drag' or 'button'
+
     }
 });
 };
@@ -95,6 +95,36 @@ iziToast.show({
 	overlay: 'true',
 	image: 'https://2.bp.blogspot.com/-LWTTmP_3v-o/XGLnEu_XWCI/AAAAAAAAS68/oQUu27eXCbEGxwTA5_2eZtKXlwfgJIuvwCK4BGAYYCw/s1600/Bez%2Btytu%25C5%2582u.png',
     progressBarColor: 'rgb(0, 255, 184)',
+    buttons: [
+
+        ['<button>Zamknij</button>', function (instance, toast) {
+            instance.hide({
+                transitionOut: 'fadeOutUp',
+
+            }, toast, 'buttonName');
+        }]
+    ],
+    onOpening: function(instance, toast){
+
+    },
+    onClosing: function(instance, toast, closedBy){
+
+
+    }
+});
+};
+
+
+function infoMecenas() {
+iziToast.show({
+    theme: 'dark',
+    icon: 'icon-person',
+    title: 'Informacje',
+    message: 'Mecenas.app - System operacyjny dla prawnika.<br>Zestaw aplikacji dla prawnika - kalkulatora opłat sądowych, wyszukiwarka właściwości Sądowej po ulicy pozwanego, generator formularzy KRS z bazy danych, to tylko przykłady! <br>Aplikacja zawiera manifest.json, co czyni ją <strong>PWA (Progressive Web App)</strong> (chwilowo bez Service Workera - w planach), napisana przy użyciu wielu technologii, PHP z biblioteką PHPWord, JS, MySQL i inne. <br> magnum opus, nad którym pracuję w wolnym czasie!',
+    position: 'topCenter', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
+
+	overlay: 'true',
+  progressBarColor: 'rgb(0, 255, 184)',
     buttons: [
 
         ['<button>Zamknij</button>', function (instance, toast) {
