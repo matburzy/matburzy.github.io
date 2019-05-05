@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+<link href="manifest.json">
 
     <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
@@ -395,7 +395,14 @@ border: none;
 
           </ul>
         </div>
+
       </section>
+
+      <div id="installContainer" class="hidden">
+            <button id="butInstall" type="button">
+              Install
+            </button>
+          </div>
 
     </div>
 
@@ -440,7 +447,32 @@ if ((host == window.location.host) && (window.location.protocol != "https:"))
     <script src="js/resume.min.js"></script>
 
 	<script src="js/showinfo.js"></script>
+ <script type="text/javascript">
+ const divInstall = document.getElementById('installContainer');
+ const butInstall = document.getElementById('butInstall');
 
+ /* Put code here */
+
+
+
+ /* Only register a service worker if it's supported */
+ if ('serviceWorker' in navigator) {
+   navigator.serviceWorker.register('/service-worker.js');
+ }
+
+ /**
+  * Warn the page must be served over HTTPS
+  * The `beforeinstallprompt` event won't fire if the page is served over HTTP.
+  * Installability requires a service worker with a fetch event handler, and
+  * if the page isn't served over HTTPS, the service worker won't load.
+  */
+ if (window.location.protocol === 'http:') {
+   const requireHTTPS = document.getElementById('requireHTTPS');
+   const link = requireHTTPS.querySelector('a');
+   link.href = window.location.href.replace('http://', 'https://');
+   requireHTTPS.classList.remove('hidden');
+ }
+ </script>
   </body>
 
 </html>
