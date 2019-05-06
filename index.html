@@ -9,11 +9,11 @@
     <meta name="author" content="Mateusz Burzyński">
 
     <title>Mateusz Burzyński Portfolio & CV</title>
-	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-    <!-- Bootstrap core CSS -->
+
+    <!-- Załadowanie Bootstrapa -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
+    <!-- Dodatkowe fonty -->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -23,17 +23,18 @@
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
 
-    <!-- Custom styles for this template -->
+    <!-- Styl -->
     <link href="css/resume.min.css" rel="stylesheet">
-
-
-
-
+	
   </head>
 
   <body id="page-top">
-
+  <!--  Work in Progress - implementacja ParticlesJS
+  <div id="particles-js"></div>
+  
+  -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+	
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">
        Mateusz Burzyński</span>
@@ -44,8 +45,13 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+	
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
+         
+		<ul class="navbar-nav">
+		<button class="nightModeButton">
+        <img class="button-image" src="darcula.gif">Aktywuj tryb Darkuli
+      </button>
           <li class="nav-item">
             <a class=" nav-link js-scroll-trigger" href="#about"><i class="fa fa-user"></i> <span class="trn">O mnie</span></a>
           </li>
@@ -68,11 +74,53 @@
             <a class="nav-link js-scroll-trigger" href="#awards"><i class="fa fa-star"></i><span class="trn">Wyróżnienia</span></a>
           </li>
 		  <li class="nav-item">
-		  <button type="button" class="btn btn-info" id="translation" onclick="translateMe()"><i class="fas fa-language"></i> English</button>
+		  <button type="button" class="btn btn-info" id="translation" onclick="English()"><i class="fas fa-language"></i> English</button>
 			</li>
 			<li class="nav-item">
 			 <button type="button" class="btn btn-info" id="translation" onclick="Polish()"><i class="fas fa-language"></i> Polski</button>
 			 </li>
+			 
+		<li class="nav-item">
+		<style>
+		.button-image {
+  height: 20px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  vertical-align: middle;
+}
+button.night-mode {
+  color: #333333;
+  background-color: white;
+}
+.container.night-mode {
+  background: #181b23;
+  color: white;
+}
+.paragraph.night-mode {
+  color: #c8c8c8;
+}
+.header.night-mode {
+  color: #ddc986;
+}
+body.night-mode {
+  background: #232732;
+}
+		</style>
+		
+	  
+	  <script type="text/javascript">
+	  var nightModeToggleButton = document.querySelector(".nightModeButton");
+var container = document.querySelector(".container");
+var para = document.querySelector(".paragraph");
+var header = document.querySelector(".header");
+var body = document.querySelector("body");
+
+nightModeToggleButton.onclick = function () {
+  $(body).css("background-color","black");
+  $(body).css("color", "white");
+};
+	  </script>
+		</li>
         </ul>
       </div>
     </nav>
@@ -87,9 +135,9 @@
           <div data-aos="fade-up" data-aos-duration="1200"  class="subheading mb-5">
             <a  href="mailto:matburzy@gmail.com">matburzy@gmail.com</a>
           </div>
-
-		  	<script>
-	function translateMe() {
+<!-- Funkcje do przycisków zmiany języka -->
+		  	<script type="text/javascript">
+	function English() {
 
 	var translator = $('body').translate({lang: "en", t: dict});
 	translator.lang("en");
@@ -99,9 +147,10 @@
 	function Polish() {
 	location.reload();
 	};
-	</script type="text/javascript">
+	</script>
+<!-- Koniec funkcji do przycisków zmiany języka -->
 		  <div data-aos="fade-up" data-aos-duration="1200"  class="subheading mb-5">
-            <button type="button" class="btn btn-info" id="translation" onclick="translateMe()"><i class="fas fa-language"></i> English</button>
+            <button type="button" class="btn btn-info" id="translation" onclick="English()"><i class="fas fa-language"></i> English</button>
 			 <button type="button" class="btn btn-info" id="translation" onclick="Polish()"><i class="fas fa-language"></i> Polski</button>
           </div>
           <p data-aos="fade-up" data-aos-duration="1500" class="mb-5"><span class="trn">Z zamiłowania</span> <i style="color:red;" class="fas fa-heart"></i> <span class="trn">programista samouk, a z wykształcenia</span> <i class="fas fa-graduation-cap"></i> <span class="trn">prawnik.</span><br><br>
@@ -173,13 +222,6 @@
             <a href="mailto:matburzy@gmail.com">matburzy@gmail.com</a>
           </div>
 
-<style>
-button {
-background: none;
-color: white;
-border: none;
-}
-</style>
 <div class="grid-container">
    <div data-aos="flip-down" data-aos-duration="1000" class="grid-item mecenasapp"><a class="nazwaAplikacji" href="http://aotesty.hmcloud.pl/prototyp"><span class="trn">Mecenas.app (Prototyp) (Login: demo, Hasło: demo123A)</span>     <i class="fas fa-external-link-alt"></i></a>   <button class="trn" onclick="infoMecenas()">Pokaż informacje</button><br><br><i class="fab fa-html5 fa-2x"> + </i> <i class="fab fa-php fa-2x"> +
     </i> <i class="fab fa-js fa-2x"> + </i>
@@ -226,10 +268,10 @@ border: none;
             <div class="resume-content mr-auto">
               <h3 class="mb-0"><i style="color: gold;" class="fa fa-star fa-spin"></i> <span class="trn">Aplikant radcowski</span></h3>
               <div class="subheading mb-3"><span class="trn">Kancelaria Radcy Prawnego</span></div>
-              <p><span class="trn">Aktualnie pracuję w Kancelarii Radcy Prawnego, gdzie zajmuję się m.in. obsługą przedsiębiorców, e-Sąd, KRS, przekład umów z angielskiego prawniczego na polski język prawniczy i w drugą stronę, zastępstwo procesowe.</span></p>
+              <p><span class="trn">Obecnie pracuję w Kancelarii Radcy Prawnego, gdzie zajmuję się m.in. obsługą przedsiębiorców, e-Sąd, KRS, przekład umów z angielskiego prawniczego na polski język prawniczy i w drugą stronę, zastępstwo procesowe.</span></p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary"><span class="trn">październik 2015 - aktualnie</span></span>
+              <span class="text-primary"><span class="trn">październik 2015 - obecnie</span></span>
             </div>
           </div>
 
@@ -398,29 +440,24 @@ border: none;
 
       </section>
 
-      <div id="installContainer" class="hidden">
-            <button id="butInstall" type="button">
-              Install
-            </button>
-          </div>
+      
 
-    </div>
-
-    <!-- Bootstrap core JavaScript -->
+    <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="jquery.translate.js"></script>
 <script src="dict.js"></script>
-
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- Inicjalizacja biblioteki AOS (animate on scroll) -->
 <script>
   AOS.init();
 </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.js"></script>
+<!-- Toast na początku przeglądania strony -->
 <script type="text/javascript">
 iziToast.show({
     title: 'Witaj przybyszu!',
@@ -433,46 +470,16 @@ iziToast.show({
 });
 </script>
 
-<script>
-var host = "matburzy.github.io";
-if ((host == window.location.host) && (window.location.protocol != "https:"))
-    window.location.protocol = "https";
-</script>
-    <!-- Plugin JavaScript -->
 
-
-
-
-    <!-- Custom scripts for this template -->
+    <!-- Dodatkowe skrypty -->
     <script src="js/resume.min.js"></script>
 
 	<script src="js/showinfo.js"></script>
- <script type="text/javascript">
- const divInstall = document.getElementById('installContainer');
- const butInstall = document.getElementById('butInstall');
+ 
+ <!--
+WIP - Particles.js
+ <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> -->
 
- /* Put code here */
-
-
-
- /* Only register a service worker if it's supported */
- if ('serviceWorker' in navigator) {
-   navigator.serviceWorker.register('/service-worker.js');
- }
-
- /**
-  * Warn the page must be served over HTTPS
-  * The `beforeinstallprompt` event won't fire if the page is served over HTTP.
-  * Installability requires a service worker with a fetch event handler, and
-  * if the page isn't served over HTTPS, the service worker won't load.
-  */
- if (window.location.protocol === 'http:') {
-   const requireHTTPS = document.getElementById('requireHTTPS');
-   const link = requireHTTPS.querySelector('a');
-   link.href = window.location.href.replace('http://', 'https://');
-   requireHTTPS.classList.remove('hidden');
- }
- </script>
   </body>
 
 </html>
