@@ -23,8 +23,8 @@ var dict = {
 "W wolnym czasie realizuję projekty związane zarówno z prawem, jak i IT. Technologie i języki programowania traktują jako narzędzia do określonych celów, a nie cele same w sobie. Realizuję ciekawe projekty IT pomagające w automatyzacji pracy prawnika. Moim celem jest praca jako programista. ": {
   en: "In my free time I create projects that are law and IT-themed. I treat technologies and programming languages as tools to reach certain goal, not the goal itself. I'm rendering interesting IT projects that automate lawyer's work. My goal is to work as a programmer."
 },
-  "prawnik.": {
-    en: "lawyer"
+  "prawnik ze zdanym egzaminem radcowskim.": {
+    en: "lawyer with passed attorney-at-law bar exam."
   },
   "O mnie": {
     en: "About Me"
@@ -116,11 +116,11 @@ var dict = {
 "lipiec 2013 - lipiec 2013": {
 	en: "July 2013 - July 2013"
 },
-"Radca Prawny": {
-	en: "Attorney-at-law"
+"Zdany egzamin radcowski": {
+	en: "Passed Attorney-at-law bar exam"
 },
-"w oczekiwaniu na rezultat egzaminu zawodowego": {
-	en: "waiting for bar exam results"
+"maj 2019": {
+	en: "may 2019"
 },
 "Okręgowa Izba Radców Prawnych w Gdańsku": {
 	en: "Attorney-at-Law Bar in Gdansk"
