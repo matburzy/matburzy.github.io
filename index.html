@@ -49,9 +49,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
          
 		<ul class="navbar-nav">
-		<button class="nightModeButton">
-        <img class="button-image" src="darcula.gif">Aktywuj tryb Darkuli
-      </button>
+		
           <li class="nav-item">
             <a class=" nav-link js-scroll-trigger" href="#about"><i class="fa fa-user"></i> <span class="trn">O mnie</span></a>
           </li>
@@ -79,7 +77,12 @@
 			<li class="nav-item">
 			 <button type="button" class="btn btn-info" id="translation" onclick="Polish()"><i class="fas fa-language"></i> Polski</button>
 			 </li>
-			 
+			 <button class="nightModeButton">
+        <img class="button-image" src="darcula.gif">Aktywuj tryb Darkuli
+      </button>
+	  <button class="lightModeButton">
+        <img class="button-image" src="lightula.gif">End the Horrible Night
+      </button>
 		<li class="nav-item">
 		<style>
 		.button-image {
@@ -118,6 +121,18 @@ var body = document.querySelector("body");
 nightModeToggleButton.onclick = function () {
   $(body).css("background-color","black");
   $(body).css("color", "white");
+};
+	  </script>
+	  	  <script type="text/javascript">
+	  var lightModeToggleButton = document.querySelector(".lightModeButton");
+var container = document.querySelector(".container");
+var para = document.querySelector(".paragraph");
+var header = document.querySelector(".header");
+var body = document.querySelector("body");
+
+lightModeToggleButton.onclick = function () {
+  $(body).css("background-color","white");
+  $(body).css("color", "black");
 };
 	  </script>
 		</li>
