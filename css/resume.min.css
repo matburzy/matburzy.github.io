@@ -20,6 +20,29 @@ body {
         padding-left: 17rem
     }
 }
+		.button-image {
+  height: 20px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  vertical-align: middle;
+}
+button.night-mode {
+  color: #333333;
+  background-color: white;
+}
+.container.night-mode {
+  background: #181b23;
+  color: white;
+}
+.paragraph.night-mode {
+  color: #c8c8c8;
+}
+.header.night-mode {
+  color: #ddc986;
+}
+body.night-mode {
+  background: #232732;
+}
 
 h1,
 h2,
