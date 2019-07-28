@@ -12,27 +12,17 @@ body {
     padding-top: 54px;
     color: #868e96;
 	transition: all 1s cubic-bezier(.25,.8,.25,1);
-	
-}
-
-.dawn {
-background: #ffa17f; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ffa17f, #00223e); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ffa17f, #00223e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-  color: white;
-  
 
 }
 
 .customicon-employee {
   width: 32px;
   height: 32px;
-  
+
   float: left;
   background-image: url("../img/employee.png");
   background-size: 100% auto;
-  
+
   /*extra fluff*/
   margin-right: 10px;
   border-radius: 5px;
@@ -41,11 +31,11 @@ background: #ffa17f; /* fallback for old browsers */
 .customicon-document {
   width: 32px;
   height: 32px;
-  
+
   float: left;
   background-image: url("../img/document.png");
   background-size: 100% auto;
-  
+
   /*extra fluff*/
   margin-right: 10px;
   border-radius: 5px;
@@ -54,11 +44,10 @@ background: #ffa17f; /* fallback for old browsers */
 .customicon-promotion {
   width: 32px;
   height: 32px;
-  
   float: left;
   background-image: url("../img/promotion.png");
   background-size: 100% auto;
-  
+
   /*extra fluff*/
   margin-right: 10px;
   border-radius: 5px;
@@ -68,11 +57,10 @@ background: #ffa17f; /* fallback for old browsers */
 .customicon-student {
   width: 32px;
   height: 32px;
-  
   float: left;
   background-image: url("../img/student.png");
   background-size: 100% auto;
-  
+
   /*extra fluff*/
   margin-right: 10px;
   border-radius: 5px;
@@ -81,11 +69,11 @@ background: #ffa17f; /* fallback for old browsers */
 .customicon-skills {
   width: 32px;
   height: 32px;
-  
+
   float: left;
   background-image: url("../img/skills.png");
   background-size: 100% auto;
-  
+
   /*extra fluff*/
   margin-right: 10px;
   border-radius: 5px;
@@ -94,11 +82,9 @@ background: #ffa17f; /* fallback for old browsers */
 .customicon-jigsaw {
   width: 32px;
   height: 32px;
-  
   float: left;
   background-image: url("../img/jigsaw.png");
   background-size: 100% auto;
-  
   /*extra fluff*/
   margin-right: 10px;
   border-radius: 5px;
@@ -108,11 +94,9 @@ background: #ffa17f; /* fallback for old browsers */
 .customicon-trophy {
   width: 32px;
   height: 32px;
-  
   float: left;
   background-image: url("../img/trophy.png");
   background-size: 100% auto;
-  
   /*extra fluff*/
   margin-right: 10px;
   border-radius: 5px;
