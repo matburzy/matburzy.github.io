@@ -218,4 +218,7 @@ var dict = {
 "W wolnych chwilach realizuję własne, niezależne projekty, które zostały opublikowane w Google Play. Realizuję pełnoprawne aplikacje, aktualnie związane z moim wykształceniem i zawodem. Jestem zainteresowany tworzeniem aplikacji różnego rodzaju. Zajmuję się również tworzeniem stron internetowych pro bono, na zlecenie znajomych, w ramach przyjacielskiej pomocy." : {
 	en: "In my free time, I develop my own independent projects which are published mainly as apps in Google Play store. My projects are mainly interconnected with my work experience and education. I am interested however in developing various projects as well. I am also making websites for my friends to help them."
 },
+"październik 2015 - obecnie" : {
+	en: "October 2015 - ongoing"
+},
 }
