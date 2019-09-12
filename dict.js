@@ -209,4 +209,13 @@ var dict = {
 "a, który pomaga mi w manipulacji plikami PDF, pisaniem uzasadnień do pozwów, a także innych czynności.": {
 	en: " scripts, which help me with PDF editing, writing generate legal documents and other stuff."
 },
+"Na co dzień pracuję w Kancelarii Radcy Prawnego, gdzie zajmuję się m.in. obsługą przedsiębiorców, e-Sąd, KRS, przekład umów z angielskiego prawniczego na polski język prawniczy i w drugą stronę, zastępstwo procesowe.": {
+	en: "I am currently working at attorney-at-law office, where I am responsible for rendering legal services to legal persons, e-Court proceedings, Companies Registry proceedings, translating legal contracts from English to Polish and representing Clients before court"
+},
+"DEVELOPER NIEZALEŻNY": {
+	en: "INDEPENDENT DEVELOPER"
+},
+"W wolnych chwilach realizuję własne, niezależne projekty, które zostały opublikowane w Google Play. Realizuję pełnoprawne aplikacje, aktualnie związane z moim wykształceniem i zawodem. Jestem zainteresowany tworzeniem aplikacji różnego rodzaju. Zajmuję się również tworzeniem stron internetowych pro bono, na zlecenie znajomych, w ramach przyjacielskiej pomocy." : {
+	en: "In my free time, I develop my own independent projects which are published mainly as apps in Google Play store. My projects are mainly interconnected with my work experience and education. I am interested however in developing various projects as well. I am also making websites for my friends to help them."
+},
 }
