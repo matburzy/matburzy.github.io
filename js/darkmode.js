@@ -13,5 +13,5 @@ nightModeToggleButton.onclick = function () {
 // Light mode
 lightModeToggleButton.onclick = function () {
   $(body).css("background-color","white");
-  $(body).css("color", "black");
+  $(body).css("color", "#8691A3");
 };
